@@ -1,8 +1,7 @@
 [build]
+  command = ""
   publish = "public"
-
-[edge_functions]
-  directory = "edge-functions"
+  edge_functions = "edge-functions"   
 
 [[edge_functions]]
   path = "/*"
