@@ -1,0 +1,11 @@
+[build]
+  command = ""
+  publish = "public"
+
+[functions]
+  directory = "functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/bridge"
+  status = 200
