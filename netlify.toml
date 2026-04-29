@@ -1,11 +1,9 @@
 [build]
-  command = ""
   publish = "public"
 
-[functions]
-  directory = "functions"
+[edge_functions]
+  directory = "edge-functions"
 
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/bridge"
-  status = 200
+[[edge_functions]]
+  path = "/*"
+  function = "proxy"
